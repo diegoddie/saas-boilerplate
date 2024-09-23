@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Logo from "../icons/logo";
 import { Button } from "../ui/button";
 import UserMenu from "./user-menu";

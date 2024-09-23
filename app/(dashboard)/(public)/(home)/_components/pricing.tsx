@@ -46,12 +46,12 @@ export default function Pricing() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Simple, Transparent Pricing</h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Choose the plan that's right for you. All plans come with a 14-day money-back guarantee.
+              Choose the plan that&apos;s right for you. All plans come with a 14-day money-back guarantee.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-3 md:gap-8">
-          {tiers.map((tier, index) => (
+          {tiers.map((tier) => (
             <Card
               key={tier.name}
               className={`flex flex-col justify-between ${
