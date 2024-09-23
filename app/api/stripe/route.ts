@@ -11,7 +11,8 @@ export async function POST(req: NextRequest) {
     const sig = requestHeaders.get("stripe-signature") as string | string[];
     try {
         event = stripe.webhooks.constructEvent(body, sig, process.env.STRIPE_WEBHOOK_KEY ?? "");
-    } catch (err) { // Removed ': any'
+    } catch (err) { 
+        console.log(err)
         return NextResponse.json({ ok: false }, { status: 400 });
     }
 
